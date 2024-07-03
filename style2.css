@@ -1,0 +1,305 @@
+/* Styling dasar untuk body */
+body {
+  min-height: 100vh;
+  background: linear-gradient(black,red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Styling untuk setiap card individu */
+.card1 {
+  margin-top: 5rem;
+  position: relative;
+  width: 275px;
+  height: 170px;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 0 8px 1px rgba(0,0,0,0.1);
+  transition: height 1s;
+  margin-bottom: 20px;
+
+  /* Efek hover pada card */
+  &:hover {
+    height: 300px;
+  }
+
+  /* Efek hover untuk card-container saat dihover pada card */
+  &:hover .card-container {
+    height: 200px;
+  }
+
+  /* Efek hover untuk pseudo-element after pada card */
+  &:hover::after {
+    left: 57.5%;
+    transform: scale(1.3) translate(-50%,-45%);
+  }
+
+  /* Pseudo-element after untuk menampilkan gambar pada card */
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: center;
+    transform: scale(1) translate(-50%,-40%);
+    width: 125px;
+    height: 125px;
+    background-image: url("image/ripan.jpg");
+    background-size: cover;
+    border-radius: 1rem;
+    box-shadow: 0 1px 7px rgba(0,0,0,0.2);
+    transition: all 1.2s;
+  }
+}
+
+.card2 {
+  margin-top: 5rem;
+  position: relative;
+  width: 275px;
+  height: 170px;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 0 8px 1px rgba(0,0,0,0.1);
+  transition: height 1s;
+  margin-bottom: 20px;
+
+  &:hover {
+    height: 300px;
+  }
+
+  &:hover .card-container {
+    height: 200px;
+  }
+
+  &:hover::after {
+    left: 57.5%;
+    transform: scale(1.3) translate(-50%,-45%);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: center;
+    transform: scale(1) translate(-50%,-40%);
+    width: 125px;
+    height: 125px;
+    background-image: url("image/iksan.jpg");
+    background-size: cover;
+    border-radius: 1rem;
+    box-shadow: 0 1px 7px rgba(0,0,0,0.2);
+    transition: all 1.2s;
+  }
+}
+
+.card3 {
+  margin-top: 5rem;
+  position: relative;
+  width: 275px;
+  height: 170px;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 0 8px 1px rgba(0,0,0,0.1);
+  transition: height 1s;
+  margin-bottom: 20px;
+
+  &:hover {
+    height: 300px;
+  }
+
+  &:hover .card-container {
+    height: 200px;
+  }
+
+  &:hover::after {
+    left: 57.5%;
+    transform: scale(1.3) translate(-50%,-45%);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: center;
+    transform: scale(1) translate(-50%,-40%);
+    width: 125px;
+    height: 125px;
+    background-image: url("image/haikal.jpg");
+    background-size: cover;
+    border-radius: 1rem;
+    box-shadow: 0 1px 7px rgba(0,0,0,0.2);
+    transition: all 1.2s;
+  }
+}
+
+.card4 {
+  margin-top: 5rem;
+  position: relative;
+  width: 275px;
+  height: 170px;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 0 8px 1px rgba(0,0,0,0.1);
+  transition: height 1s;
+  margin-bottom: 20px;
+
+  &:hover {
+    height: 300px;
+  }
+
+  &:hover .card-container {
+    height: 200px;
+  }
+
+  &:hover::after {
+    left: 57.5%;
+    transform: scale(1.3) translate(-50%,-45%);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: center;
+    transform: scale(1) translate(-50%,-40%);
+    width: 125px;
+    height: 125px;
+    background-image: url("image/edgar.jpg");
+    background-size: cover;
+    border-radius: 1rem;
+    box-shadow: 0 1px 7px rgba(0,0,0,0.2);
+    transition: all 1.2s;
+  }
+}
+
+.card5  {
+  margin-top: 5rem;
+  position: relative;
+  width: 275px;
+  height: 170px;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 0 8px 1px rgba(0,0,0,0.1);
+  transition: height 1s;
+  margin-bottom: 20px;
+
+  &:hover {
+    height: 300px;
+  }
+
+  &:hover .card-container {
+    height: 200px;
+  }
+
+  &:hover::after {
+    left: 57.5%;
+    transform: scale(1.3) translate(-50%,-45%);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: center;
+    transform: scale(1) translate(-50%,-40%);
+    width: 125px;
+    height: 125px;
+    background-image: url("image/julian.jpg");
+    background-size: cover;
+    border-radius: 1rem;
+    box-shadow: 0 1px 7px rgba(0,0,0,0.2);
+    transition: all 1.2s;
+  }
+}
+
+/* Styling untuk card-container */
+.card-container {
+  height: 70px;
+  transform: translatey(100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+  font: 1rem helvetica, sans-serif;
+  text-align: center;
+  overflow: hidden;
+  transition: height 1s;
+
+  /* Styling untuk informasi bio pada card-container */
+  & .bio {
+    & h2 {
+      font-size: 1.1rem;
+      color: var(--name);
+      margin-bottom: 0.4rem;
+    }
+
+    & p {
+      font-size: 0.75rem;
+      color: var(--gray);
+    }
+  }
+
+  /* Styling untuk data tambahan pada card-container */
+  & .data {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    margin-left: 0;
+
+    & li {
+      width: 85px;
+    }
+
+    & li span {
+      display: block;
+    }
+
+    /* Styling untuk jumlah */
+    & .count {
+      font-size: 0.8rem;
+      font-weight: 900;
+      color: var(--dark);
+      margin-bottom: 0.25rem;
+    }
+
+    & .type {
+      font-size: 0.7rem;
+      color: var(--gray);
+    }
+  }
+
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: calc(33.33% - 20px); /* 3 cards per row with 20px gap */
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    width: calc(50% - 20px); /* 2 cards per row with 20px gap */
+  }
+}
+
+.navbar{
+  position: center;
+}
+
+.about-text{
+  background-color: #007bff;
+  color:azure;
+  border-style: double;
+  border-radius: 10px;
+}
+.h2{
+  color: white;
+  text-align: center;
+}

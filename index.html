@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>worldbook</title>
+    <!-- Menghubungkan ke CDN Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    
+
+    <!-- Bagian Header dimulai -->
+    <header>
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo">WORLD ROOM</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#kategori">Kategori</a>
+            <a href="#member">Buku</a>
+            <a href="#content">Content</a>
+            <a href="#Podcast">Podcast</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="icons">
+            <a href="indexProfile.html" class="fas fa-user"></a>
+            <img src="image/moon.png" id="icon">
+        </div>
+
+        <!--Menambahkan fungsi untuk mengganti tema menjadi gelap atau terang-->
+        <script>
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function(){
+                document.body.classList.toggle("dark-theme");
+                if(document.body.classList.contains("dark-theme")){
+                    icon.src = "image/sun.png";
+                }else{
+                    icon.src = "image/moon.png";
+                    
+                }
+            }
+        </script>
+
+    </header>
+    
+    <!-- Bagian Home dimulai -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>WORLD ROOM</h3>
+            <span>PERPUSTAKAAN ONLINE</span>
+        </div>
+    </section>
+
+    <!-- Bagian Kategori dimulai -->
+    <section class="kategori" id="kategori">
+        <h1 class="heading"><span>Tentang </span>Buku</h1>
+        <div class="row">
+            <div class="video-container">
+                <video src="image/library.mp4" loop autoplay muted></video>
+        
+            </div>
+            <div class="content">
+                <h3>Bacalah Bukumu</h3>
+                <p>Membaca adalah jendela dunia. Melalui buku, kita dapat menjelajahi tempat-tempat yang belum pernah kita kunjungi dan memahami kehidupan dari perspektif yang berbeda. Buku adalah cermin dari jiwa. Dengan membaca, kita belajar lebih banyak tentang diri kita sendiri dan orang lain.</p>
+                <a href="#member" class="btn">Pilih Bukumu</a>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bagian Galeri dimulai -->
+    <div class="wrapper">
+        <div class="gallery">
+        <div class="image"><span><img src="image/g.png" alt=""></span></div>
+        <div class="image"><span><img src="image/q - Copy.png" alt=""></span></div>
+        <div class="image"><span><img src="image/w - Copy.png" alt=""></span></div>
+        <div class="image"><span><img src="image/e - Copy.png" alt=""></span></div>
+        <div class="image"><span><img src="image/r - Copy.png" alt=""></span></div>
+        <div class="image"><span><img src="image/h.png" alt=""></span></div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Bagian Pilihan Buku dimulai -->
+    <section class="member" id="member">
+        <h1 class="heading">PILIHAN <span>BUKU</span></h1>
+    <div class="box-container">
+
+        <div class="box">
+            <span class="discount">1</span>
+            <div class="image">
+                <a href="#home"><img src="image/1.jpg" alt=""></a>
+            </div>
+            <div class="content">
+                <h3>Dasar Teknik Informatika</h3>
+                <div class="price">Novega Pratama Adiputra</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">2</span>
+            <div class="image">
+                <img src="image/2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Pengantar Teknologi Informasi</h3>
+                <div class="price">Buhori Muslim</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">3</span>
+            <div class="image">
+                <img src="image/3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Metode Penelitian</h3>
+                <div class="price">Ade Johar Maturidi</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">4</span>
+            <div class="image">
+                <img src="image/4.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>111 Code Html</h3>
+                <div class="price">Arista Prasetyo Adi</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">5</span>
+            <div class="image">
+                <img src="image/5.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Investing in Digital</h3>
+                <div class="price">William Win Yang</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">6</span>
+            <div class="image">
+                <img src="image/6.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>Hidup Sekali, Berarti , Lalu Mati</h3>
+                <div class="price">Ahmad Rifai Rifan</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">7</span>
+            <div class="image">
+                <img src="image/7.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Teknik Pengolahan Audio&Video</h3>
+                <div class="price">	Johnie Rogers Swanda Pasaribu, S.Kom., M.Kom.</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">8</span>
+            <div class="image">
+                <img src="image/8.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Aplikasi Komputer</h3>
+                <div class="price">Dwi Krisbiantoro, M.Kom.</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">9</span>
+            <div class="image">
+                <img src="image/9.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Krisis Tata Kelola Pendidikan</h3>
+                <div class="price">Teguh Triwiyanto</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">10</span>
+            <div class="image">
+                <img src="image/10.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>Dasar Pemograman Web</h3>
+                <div class="price">Dwi Krisbiantoro, M.Kom</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">11</span>
+            <div class="image">
+                <img src="image/11.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>Filosofi Kehidupan</h3>
+                <div class="price">Husni Mubarok</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">12</span>
+            <div class="image">
+                <img src="image/12.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3>Antara Fiksi dan Realita</h3>
+                <div class="price">Andri Wicaksono</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bagian Artikel dimulai -->
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <section class="content" id="content">
+        <h1 class="heading">ARTIKEL <span>INDONESIA</span></h1>
+        <section>
+            <section class="parallax-1">
+                <div class="parallax-inner">
+                    <h1>METAVERSE</h1>
+                </div>
+            </section>
+            <h2>Metaverse Indonesia</h2>
+            <p>Metaverse, saat ini menjadi istilah yang populer dalam industri teknologi dan hiburan, menawarkan pengalaman digital yang mendalam dimana pengguna dapat berinteraksi dengan dunia maya secara menyeluruh. Dalam artikel ini, kita akan menjelaskan secara rinci apa itu metaverse, melihat perkembangan metaverse di Indonesia, mengidentifikasi tantangan yang dihadapinya, dan menjelajahi potensi masa depannya.
+                Apa Itu Metaverse? Metaverse adalah konsep yang melibatkan dunia virtual, augmented reality (AR), dan mixed reality (MR). Ini menciptakan lingkungan digital dimana pengguna dapat berinteraksi dengan objek, avatar, dan pengguna lain dalam dunia maya yang menyerupai realitas. Potensi metaverse sangat luas, mencakup bidang-bidang seperti hiburan, perdagangan, pendidikan, dan banyak lagi.</p>
+
+                <p>Perkembangan Metaverse di Indonesia,
+                Perkembangan Metaverse di Indonesia mengalami pertumbuhan yang signifikan. Banyak perusahaan teknologi dan pengembang game lokal meluncurkan platform dan aplikasi metaverse khusus untuk masyarakat Indonesia. Pengguna dapat menikmati pengalaman metaverse melalui platform sosial dengan fitur-fitur menarik.
+                Selain itu, metaverse juga diterapkan dalam industri kreatif seperti film dan musik, menciptakan pengalaman unik bagi para penggemar seni di Indonesia.
+                Pengenalan metaverse dalam platform sosial memungkinkan pengguna terhubung, berinteraksi dengan avatar, dan menjelajahi dunia maya dengan konten menarik. Penggunaan metaverse dalam industri kreatif seperti pembuat film dapat membuat pengalaman sinematik dengan elemen metaverse yang kuat, sementara untuk musisi dapat mengadakan konser maya yang memukau melalui teknologi metaverse.
+                Perkembangan metaverse di Indonesia bukan hanya berpengaruh dalam dunia hiburan dan kreativitas, namun juga dapat membuka peluang baru dalam sektor perdagangan dan bisnis. Perusahaan dan merek dapat memanfaatkan metaverse untuk mempromosikan produk, menciptakan pengalaman belanja virtual menarik, dan mengadakan konferensi bisnis dalam lingkungan metaverse.</p>
+                
+                <p>Tantangan Metaverse di Indonesia, 
+                Namun, seperti halnya perkembangan teknologi lainnya, metaverse juga menghadapi tantangan di Indonesia. Salah satu tantangan utama yaitu terbatasnya konektivitas internet, yang belum merata di beberapa wilayah Indonesia. Untuk dapat mengakses dan menggunakan metaverse dengan lancar, akses internet yang cepat dan stabil sangatlah penting.
+                Selain itu, tantangan lainnya mencakup regulasi, privasi, dan keamanan data dalam lingkungan metaverse. Dibutuhkan kebijakan yang mendukung dan kesadaran akan perlindungan privasi dan keamanan dalam penggunaan metaverse.
+                Perkembangan metaverse di Indonesia menawarkan peluang yang besar di berbagai sektor. Dengan terus majunya teknologi dan adopsi yang semakin luas, metaverse mempunyai potensi untuk menjadi tren yang dapat mempengaruhi cara masyarakat hidup, bekerja, dan berinteraksi di masa depan. Meskipun terdapat tantangan yang harus dihadapi, upaya terus dilakukan untuk mengatasi hambatan tersebut dan memastikan bahwa potensi metaverse dapat dimanfaatkan secara optimal di Indonesia.
+                Dalam beberapa tahun ke depan, metaverse berpotensi menjadi bagian penting dalam transformasi digital dan pengalaman pengguna yang semakin menarik, baik di Indonesia maupun secara global.</p>
+            <section class="parallax-2">
+                <div class="parallax-inner">
+                    <h1>IKN</h1>
+                </div>
+            </section>
+            <h2>Ibu Kota Nusantara</h2>
+            <p>Menteri PPN/Kepala Bappenas Suharso Monoarfa secara resmi memaparkan nama Ibu Kota Negara (IKN) baru, yaitu Nusantara yang terletak di wilayah Penajam Paser Utara, Kalimantan Timur. Suharso mengungkapkan, nama Nusantara dipilih dari sekitar 80 nama lain yang diusulkan, antara lain Negara Jaya, Nusantara Jaya, Nusa Karya, Nusa Jaya, Pertiwipura, Cakrawalapura, dan Kertanegara. 
+                "Alasannya adalah Nusantara sudah dikenal sejak dulu, dan ikonik di internasional, mudah dan menggambarkan kenusantaraan kita semua Republik Indonesia," kata Suharso, dikutip dari Kompas.com. Baca juga: Bagaimana Gajah Mada Dapat Menyatukan Wilayah Nusantara? 
+                Arti Nusantara Dikutip dari indonesiabaik.id, nama Nusantara dipilih menjadi nama ibu kota negara baru, karena kata tersebut telah dikenal dan menjadi hal yang ikonik di mata internasional. Nusantara adalah sebuah konseptualisasi atas wilayah geografi, di mana terdapat banyak pulau-pulau dan disatukan oleh lautan. 
+                Ibu Kota yang Pindah Artikel Kompas.id Hal ini, menunjukkan bahwa Indonesia merupakan negara maritim. Dari situ pula, terungkap sebuah pengakuan kemajemukan geografis yang melandasi kemajemukan budaya etnis. Fakta IKN Baru Terbaru, Rancangan Undang-Undang tentang Ibu Kota Negara (RUU IKN) sudah disetujui menjadi undang-undang dalam rapat paripurna DPR RI. 
+                Dengan begitu, pemindahan ibu kota dari Jakarta ke Kalimantan Timur (Kaltim) dengan nama Nusantara bisa dilaksanakan.</p>
+                <p>
+                    Proses pembangunan IKN Proses pembangunan ibu kota baru akan berlangsung sampai 2045. Mengacu buku saku pemindahan IKN, tahapan pembangunan ibu kota baru dilakukan pada 2020-2024, yakni membangun infrastruktur utama seperti Istana Kepresidenan, Gedung MPR/DPR, dan perumahan di area utama IKN. Kemudian pemindahan ASN/PNS tahap awal seperti TNI, Polri, dan MPR. 
+                    Pada tahap awal juga ditargetkan infrastruktur dasar utama selesai dibangun dan beroperasi, seperti air hingga energi untuk 500 ribu penduduk di tahap awal. </p>
+                    <section class="parallax-3">
+                        <div class="parallax-inner">
+                            <h1>INDONESIA</h1>
+                </div>
+            </section>
+            <h2>Indonesia</h2>
+            <p>Indonesia, dengan nama resmi Republik Indonesia,adalah sebuah negara kepulauan di Asia Tenggara yang dilintasi garis khatulistiwa dan berada di antara daratan benua Asia dan Oseania sehingga dikenal sebagai negara lintas benua, serta antara Samudra Pasifik dan Samudra Hindia.
+                Indonesia merupakan negara terluas ke-14 sekaligus negara kepulauan terbesar di dunia dengan luas wilayah sebesar 1.904.569 km², serta negara dengan pulau terbanyak ke-6 di dunia, dengan jumlah 17.504 pulau. Nama alternatif yang dipakai untuk kepulauan Indonesia disebut Nusantara. Selain itu, Indonesia juga menjadi negara berpenduduk terbanyak ke-4 di dunia dengan penduduk mencapai 277.749.853 jiwa pada tahun 2022, 
+                serta negara dengan penduduk beragama Islam terbanyak kedua di dunia setelah Pakistan, dengan penganut lebih dari 238.875.159 jiwa atau sekitar 86,9%. Indonesia adalah negara multiras, multietnis, dan multikultural di dunia, seperti halnya Amerika Serikat.
+                ndonesia berbatasan dengan sejumlah negara di Asia Tenggara dan Oseania. Indonesia berbatasan di wilayah darat dengan Malaysia di Pulau Kalimantan dan Sebatik, dengan Papua Nugini di Pulau Papua, dan dengan Timor Leste di Pulau Timor. 
+                Negara yang hanya berbatasan laut dengan Indonesia adalah Singapura, Filipina, Australia, Thailand, Vietnam, Palau, dan wilayah persatuan Kepulauan Andaman dan Nikobar, India.</p>
+                
+                <p>Indonesia adalah negara kesatuan dengan bentuk pemerintahan republik berdasarkan konstitusi yang sah, yaitu Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 (UUD 1945). Berdasarkan UUD 1945 pula, Dewan Perwakilan Rakyat (DPR), Dewan Perwakilan Daerah (DPD), dan Presiden dicalonkan lalu dipilih dalam pemilihan umum.
+                Ibu kota Indonesia saat ini adalah Jakarta. Pada tanggal 18 Januari 2022, pemerintah Indonesia menetapkan Ibu Kota Nusantara yang berada di Pulau Kalimantan, yang menempati wilayah Kabupaten Penajam Paser Utara, untuk menggantikan Jakarta sebagai ibu kota yang baru.[19] Hingga tahun 2022, proses peralihan ibu kota masih berlangsung.</p>
+                
+                <p>Sejarah Indonesia banyak dipengaruhi oleh bangsa-bangsa pendatang dan penjajah. Kepulauan Indonesia menjadi wilayah perdagangan penting sejak abad ke-7, yaitu sejak berdirinya Sriwijaya, kerajaan bercorak Hinduisme-Buddhisme yang berpusat di Palembang. Kerajaan Sriwijaya menjalin hubungan agama dan perdagangan dengan bangsa Tionghoa, India, dan juga Arab. 
+                Agama dan kebudayaan Hinduisme-Buddhisme tumbuh, berkembang, dan berasimilasi di kepulauan Indonesia pada awal abad ke-4 hingga abad ke-13 Masehi. Setelah itu, para pedagang dan ulama dari Jazirah Arab yang membawa agama dan kebudayaan Islam sekitar abad ke-8 hingga abad ke-16. Pada akhir abad ke-15, bangsa-bangsa Eropa datang ke kepulauan Indonesia dan berperang untuk memonopoli perdagangan rempah-rempah di Maluku semasa Zaman Penjelajahan. 
+                Setelah berada di bawah kolonial Belanda, Indonesia yang saat itu bernama Hindia Belanda, memproklamasikan kemerdekaan di akhir Perang Dunia II, tepatnya pada tanggal 17 Agustus 1945. Selanjutnya, Indonesia mendapat berbagai tantangan dan persoalan berat, mulai dari bencana alam, praktik korupsi yang masif, konflik sosial, gerakan separatisme, proses demokratisasi, dan periode pembangunan, perubahan dan perkembangan sosial–ekonomi–politik, serta modernisasi yang pesat.
+                Indonesia terdiri dari berbagai suku bangsa, bahasa, dan agama. Berdasarkan rumpun bangsa, Indonesia terdiri atas bangsa asli pribumi yakni Austronesia dan Melanesia di mana bangsa Austronesia yang terbesar jumlahnya dan lebih banyak mendiami Indonesia bagian barat. Dengan suku Jawa dan Sunda membentuk kelompok suku bangsa terbesar dengan persentase mencapai 57% dari seluruh penduduk Indonesia.[20] Semboyan nasional Indonesia, "Bhinneka Tunggal Ika" (Berbeda-beda tetapi tetap satu), 
+                bermakna keberagaman sosial-budaya yang membentuk satu kesatuan negara. Selain memiliki penduduk yang padat dan wilayah yang luas, Indonesia memiliki alam yang mendukung tingkat keanekaragaman hayati terbesar ke-2 di dunia..</p>
+            </section>
+
+    <!-- Bagian Podcast dimulai -->
+    <section class="Podcast" id="Podcast">
+        <h1 class="heading"><span>Podcast</span> Pengetahuan </h1>
+        <div class="row">
+                <div class="music"> </div>       
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/2bLH1hcr3q7oj9dZXWRCks?utm_source=generator" width="100%" height="230" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1d5iuaMQAOigupVeVkBa1r?utm_source=generator" width="100%" height="230" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1P5TmMpkppiADxnJBRSjOG?utm_source=generator" width="100%" height="230" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/12P5pY6LDETHfwJMp1FPAX/video?utm_source=generator" width="100%" height="230" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+    <!-- Bagian Kontak dimulai -->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contact</span> us</h1>
+        <div class="row">
+            <form action="">
+                <input type="text" class="box" placeholder="Name">
+                <input type="email" class="box" placeholder="Email">
+                <input type="number" class="box" placeholder="Number">
+                <textarea name="" class="box" placeholder="Message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Footer dimulai -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Extra links</h3>
+                <a href="https://www.instagram.com/ryndrmnsh_/">my account instagram</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="https://wa.me/628985757890">+6289-8575-7890</a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">dermansahrivan@gmail.com</a>
+                <a href="https://maps.app.goo.gl/Vsqb3YHu7oB9hoki8">Indonesia, Jakarta</a>
+        
+            </div>
+        </div>
+        <div class="credit">
+            &copy; 2024 <span> Perpustakaan</span> Universitas Bina Sarana Informatika.
+        </div>
+    </section>
+
+</body>
